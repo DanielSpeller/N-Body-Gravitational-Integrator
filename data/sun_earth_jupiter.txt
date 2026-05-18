@@ -1,0 +1,12 @@
+# Sun-Earth-Jupiter system in heliocentric coordinates
+# Units: AU, years, solar masses
+# G = 4*pi^2 AU^3 yr^-2 M_sun^-1  (default)
+#
+# Circular orbit velocity: v = 2*pi * sqrt(M/r)
+#   Earth:   v = 2*pi * sqrt(1.0/1.0) = 6.283185307179586 AU/yr
+#   Jupiter: v = 2*pi * sqrt(1.0/5.2) = 2.755763022505427 AU/yr
+#
+# Format: name  mass  x  y  z  vx  vy  vz
+Sun      1.0      0.0  0.0  0.0   0.0                  0.0  0.0
+Earth    3.0e-6   1.0  0.0  0.0   0.0  6.283185307179586  0.0
+Jupiter  1.0e-3   5.2  0.0  0.0   0.0  2.755763022505427  0.0

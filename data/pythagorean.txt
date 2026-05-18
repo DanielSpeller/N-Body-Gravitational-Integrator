@@ -1,0 +1,16 @@
+# Burrau's Pythagorean Three-Body Problem (1913)
+# Masses 3, 4, 5 at vertices of a 3-4-5 right triangle, all at rest.
+# Run with: --G 1.0 --tmax 20 --dt 0.001
+#
+# Side lengths between bodies:
+#   |Body1-Body2| = sqrt((1-(-2))^2 + (3-(-1))^2) = sqrt(9+16) = 5
+#   |Body1-Body3| = sqrt((1-1)^2   + (3-(-1))^2)  = sqrt(0+16) = 4
+#   |Body2-Body3| = sqrt((-2-1)^2  + (-1-(-1))^2) = sqrt(9+0)  = 3
+#
+# Reference: Burrau (1913); Szebehely & Peters, AJ 72 (1967)
+# Note: close triple encounter near t~15 is expected chaotic behaviour.
+#
+# Format: name  mass  x  y  z  vx  vy  vz
+Body1    3.0   1.0  3.0  0.0   0.0  0.0  0.0
+Body2    4.0  -2.0 -1.0  0.0   0.0  0.0  0.0
+Body3    5.0   1.0 -1.0  0.0   0.0  0.0  0.0

@@ -1,0 +1,17 @@
+# Local editor/tool settings
+.claude/
+
+# Build artifacts
+build/
+*.o
+*.exe
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Output data
+output/
+*.csv
