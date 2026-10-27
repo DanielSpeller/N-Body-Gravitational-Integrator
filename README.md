@@ -2,7 +2,6 @@
 
 Simulates the gravitational motion of N point masses using the velocity-Verlet (leapfrog) integrator. Comes with initial conditions for the Sun-Earth-Jupiter system and Burrau's Pythagorean three-body problem.
 
-The integrator is symplectic, meaning it conserves a shadow Hamiltonian exactly. This keeps energy error from drifting over long integrations — after 100 years and 100,000 steps the relative energy error stays around 10⁻⁷. RK4 would accumulate a systematic bias over the same number of steps and the orbit would slowly spiral in or out.
 
 ---
 
@@ -34,7 +33,7 @@ This produces `build/nbody.exe` and `build/nbody_tests.exe`.
 
 All flags are optional:
 
-| flag | default | what it does |
+| flag | default | description |
 |---|---|---|
 | `--dt` | 0.001 | time step in years |
 | `--tmax` | 100.0 | end time in years |
@@ -85,7 +84,6 @@ a(t+dt)     = recompute forces            <- one force eval per step
 v(t+dt)     = v(t+dt/2) + a(t+dt) * dt/2 <- half-kick
 ```
 
-Because it's symplectic, energy error oscillates around zero rather than drifting in one direction. The Sun-Earth-Jupiter system over 100 years with dt=0.001 yr gives a relative energy drift of ~10⁻⁷.
 
 ---
 
