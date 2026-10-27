@@ -1,6 +1,6 @@
 # N-Body Gravitational Integrator
 
-Simulates the gravitational motion of N point masses using the velocity-Verlet (leapfrog) integrator. Comes with initial conditions for the Sun-Earth-Jupiter system and Burrau's Pythagorean three-body problem.
+Simulates the gravitational motion of N point masses using the velocity-Verlet (leapfrog) integrator.
 
 
 ---
